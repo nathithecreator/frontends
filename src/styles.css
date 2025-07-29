@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+
+:root {
+  --color-primary: #4A90E2;
+  --color-secondary-light: #F5F7FA;
+  --color-secondary: #4A4E69;
+  --color-accent: #F5A623;
+  --color-success: #6BCB77;
+  --color-warning: #FFD93D;
+  --color-error: #FF6B6B;
+  --color-info: #4D96FF;
+  --color-white: #FFFFFF;
+  --color-gray-light: #F5F7FA;
+  --color-gray-medium: #B0B0B0;
+  --color-gray-dark: #22223B;
+  --color-purple-pastel: #B2B5E0;
+  --color-mint: #C9F7F5;
+  --color-dark-primary: #22223B;
+  --color-dark-secondary: #4A4E69;
+  --color-dark-accent: #F5A623;
+  --color-dark-background: #181A1B;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    scrollbar-color: #000 #f1f1f1;
+    scrollbar-width: thin;
+}

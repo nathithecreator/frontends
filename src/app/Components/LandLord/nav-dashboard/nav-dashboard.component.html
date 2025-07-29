@@ -1,0 +1,37 @@
+<div class="main-nav">
+  <div class="titles-section">
+    <p class="a-nav" 
+       [class.active]="activeNav === 'Overview'"
+       (click)="setActive('Overview'); gotoDashboard()">Overview</p>
+       
+    <p class="a-nav" 
+       [class.active]="activeNav === 'Properties'"
+       (click)="setActive('Properties'); gotoProperties()">Properties</p>
+       
+    <p class="a-nav" 
+       [class.active]="activeNav === 'Applications'"
+       (click)="setActive('Applications'); gotoApplications()">Applications</p>
+       
+    <p class="a-nav" 
+       [class.active]="activeNav === 'Maintenance'"
+       (click)="setActive('Maintenance'); gotoMaintenance()">Maintenance</p>
+       
+    <p class="a-nav" 
+       [class.active]="activeNav === 'Tenants'"
+       (click)="setActive('Tenants'); gotoTenants()">Tenants</p>
+
+    <div class="right-section">
+      <div class="notification" (click)="gotoNotification()">
+        <i class="bi bi-bell-fill"></i>
+        <span class="notification-badge">3</span>
+      </div>
+      <div class="profile-picture" (click)="gotoProfile()">A</div>
+      <div class="logOutBtn">
+         <p class="logout-text" (click)="logout()">Log Out</p>
+      </div>
+      <div class="logout-icon" (click)="logout()">
+         <i class="bi bi-box-arrow-left"></i>
+      </div>
+    </div>
+  </div>
+</div>

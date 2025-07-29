@@ -1,0 +1,24 @@
+<div class="main-nav">
+  <div class="logo-section" (click)="goHome()">
+    <p class="title-uninest">UniNest Go</p>
+  </div>
+  <div class="titles-section">
+    <div class="desktop">
+      <p (click)="scrollToAbout()">About Us</p>
+      <p (click)="scrollToContact()">Contact Us</p>
+      <p (click)="scrollToFAQ()">FAQ</p>
+      <p (click)="goToLogin()">Log In</p>
+    </div>
+    <div class="hamburger" (click)="toggleMobileMenu()">
+      <i class="bi bi-list"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile menu -->
+<div *ngIf="mobileMenuOpen" class="mobile-menu">
+  <p (click)="scrollToAbout()">About Us</p>
+  <p (click)="scrollToContact()">Contact Us</p>
+  <p (click)="scrollToFAQ()">FAQ</p>
+  <p (click)="goToLogin()">Log In</p>
+</div>

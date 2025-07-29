@@ -1,0 +1,132 @@
+app-nav-dashboard {
+  position: fixed;
+  z-index: 555;
+  top: 0;
+}
+
+.main-dashboard-section {
+  padding: 1% 0;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  background-image: url('./images/uninestback1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  margin-top: 80px; 
+}
+
+.white-main-section {
+  width: 80vw;
+  height: 100%;
+  background-color: transparent;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 15px;
+  bottom: 0;
+}
+
+.properties-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.add-property-btn {
+  width: 100%;
+  max-width: 950px;
+  height: 60px;
+  color: white;
+  background-color: #6BCB77;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.094);
+  
+}
+
+.add-property-btn:hover {
+  background-color: #407c48;
+}
+
+.property-card {
+  width: 100%;
+  max-width: 450px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.412);
+}
+
+.property-image {
+  height: 200px;
+  width: 100%;
+  background-image: url('https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 15px;
+}
+
+.property-name {
+  font-weight: 700;
+  color: #4A4E69;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.property-detail {
+  display: flex;
+  margin: 8px 0;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #666;
+  margin-right: 5px;
+}
+
+.detail-value {
+  color: #333;
+}
+
+.view-details-btn {
+  width: 100%;
+  height: 40px;
+  background-color: #4A90E2;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.view-details-btn:hover {
+  background-color: #3a7bc8;
+}
+
+@media (max-width: 650px) {
+  .white-main-section {
+  width: 100vw;
+  height: 100%;
+  background-color: transparent;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 15px;
+  bottom: 0;
+  margin-top: 20px;
+}
+}

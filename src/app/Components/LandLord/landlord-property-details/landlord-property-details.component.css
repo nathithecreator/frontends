@@ -1,0 +1,307 @@
+/* Base Styles */
+app-nav-dashboard {
+  position: fixed;
+  z-index: 555;
+  top: 0;
+  width: 100%;
+}
+
+.main-dashboard-section {
+  padding: 1% 0;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  background-image: url('../../../../assets/images/uninestback1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  margin-top: 80px;
+}
+
+.white-main-section {
+  width: 80vw;
+  min-height: 90vh;
+  background-color: #fff;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+/* Typography */
+.property-title {
+  font-size: 30px;
+  color: #4A90E2;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.section-title {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.status-title {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.gobackBtn{
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.goback-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #4A90E2;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.goback-btn:hover {
+  color: #3a7bc8;
+}
+
+.form-header {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 20px 0;
+}
+
+/* Property Card */
+.property-details-card {
+  background-color: #F5F7FA;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Property Header Section */
+.property-header {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.property-image-container {
+  flex: 1;
+}
+
+.property-image {
+  height: 300px;
+  width: 100%;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.property-status-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Status Items */
+.status-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.status-label {
+  font-weight: 600;
+  margin-right: 10px;
+  min-width: 120px;
+  color: #4A4E69;
+}
+
+.status-badge {
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-weight: 500;
+  transform: translateX(28px);
+  font-size: 13px;
+}
+
+.status-badge.active {
+  background-color: #FFF7ED;
+  color: #F97316;
+ 
+}
+
+.status-value {
+  font-weight: 500;
+  transform: translateX(10px);
+}
+
+.status-value.paid {
+  color: green;
+  transform: translateX(40px);
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.edit-btn, .deactivate-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.edit-btn {
+  background-color: #4A90E2;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #3a7bc8;
+}
+
+.deactivate-btn {
+  background-color: #FF6B6B;
+  color: white;
+}
+
+.deactivate-btn:hover {
+  background-color: #e05a5a;
+}
+
+/* Property Information */
+.property-info-section {
+  margin-bottom: 30px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.info-item {
+  display: flex;
+}
+
+.info-label {
+  font-weight: 600;
+  margin-right: 5px;
+  min-width: 80px;
+  color: #4A4E69;
+}
+
+/* Description Section */
+.property-description {
+  margin-top: 30px;
+}
+
+.description-text {
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Amenities Sections */
+.property-amenities-section {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.amenities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.amenity-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  padding: 12px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  width: calc(50% - 15px);
+}
+
+.amenity-item i {
+  font-size: 1.2rem;
+  color: #4A90E2;
+}
+
+.amenity-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.amenity-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.amenity-desc {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .white-main-section {
+    width: 90vw;
+  }
+  
+  .property-header {
+    flex-direction: column;
+  }
+  
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .white-main-section {
+    width: 95vw;
+    padding: 20px;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .amenity-item {
+    width: 100%;
+  }
+}

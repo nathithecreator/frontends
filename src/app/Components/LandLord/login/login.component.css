@@ -1,0 +1,238 @@
+.main-log-in {
+    padding: 5% 10%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    background: linear-gradient(to bottom right, #4A90E2, #294F7C);
+    font-family: 'Arial', sans-serif;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto auto;
+    margin-left: 80px;
+}
+
+.back-button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 50px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
+.back-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.back-button i {
+    font-size: 18px;
+}
+
+.login-title {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.login-card {
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.501);
+}
+
+.logo-text {
+    color: #4A90E2;
+    font-size: 38px;
+    margin: 0 0 30px 0;
+    text-align: center;
+    font-weight: 700;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-input {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    padding: 0 20px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+.form-input:focus {
+    border-color: #4A90E2;
+    outline: none;
+}
+
+.login-button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: #4A90E2;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #3a7bc8;
+}
+
+.register-prompt {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #666;
+    font-size: 14px;
+}
+
+#registerBtn {
+    color: #67acfc;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-top: -15px;
+}
+
+#registerBtn:hover {
+    text-decoration: underline;
+}
+
+#create-label{
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+/* Mobile Version */
+@media (max-width: 650px) {
+  .main-log-in {
+    padding: 20px;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #4A90E2, #294F7C);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    margin: auto auto;
+  }
+
+  .login-title {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+     margin-top: 60px;
+  }
+
+  .login-card {
+    background-color: white;
+    width: 100%;
+    padding: 30px 25px;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.501);
+    margin-top: 20px;
+  }
+
+  .logo-text {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Input Styles */
+  .form-input {
+    width: 100%;
+    height: 52px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    padding: 0 18px;
+    font-size: 16px;
+    background-color: #f8fafc;
+  }
+
+  .form-input:focus {
+    border: 2px solid #4A90E2;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+    outline: none;
+  }
+
+  /* Button Styles */
+  .login-button {
+    width: 100%;
+    height: 54px;
+    border-radius: 12px;
+    font-size: 17px;
+    margin-top: 5px;
+  }
+
+  /* Register Prompt - Horizontal Layout */
+  .register-prompt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13px;
+    padding: 5px 5px;
+    color: white;
+    font-size: 15px;
+  }
+
+  #registerBtn {
+    color: #71aaec;
+    font-weight: 600;
+  }
+
+  
+}
+
